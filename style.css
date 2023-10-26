@@ -1,0 +1,273 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 60px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    /* top:0px; */
+}
+
+/*Navigation Bar: logo and Image */
+#logo {
+    margin: 5px 15px;
+    background-color: gold;
+}
+
+#logo img {
+    height: 50px;
+    margin: 5px 10px;
+    /* filter: invert(); */
+}
+
+/* Navigation Bar: list styling */
+
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 680px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul li {
+    /* display: flex; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: rgb(246, 246, 12);
+    display: block;
+    background-color: rgba(17, 12, 12, 0.497);
+    /* margin: 50px; */
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(54, 59, 86);
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    /* top: 100px; */
+    /* left: 200px; */
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 180px;
+}
+
+#home::before {
+    content: "";
+    background: url('../5.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.8; */
+}
+
+#home h1 {
+    top: 100px;
+    border-radius: 13px;
+    border-color: blue;
+    background-color: rgba(234, 151, 151, 0.174);
+    color: rgb(233, 236, 5);
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    text-shadow: 1.9px 0.5px rgb(216, 18, 74);
+    box-shadow: 4px 5px rgba(19, 19, 232, 0.332);
+    /* transition-duration: 5s;
+    transform: skew(50deg); */
+}
+
+#home h3 {
+    color: rgb(253, 11, 11);
+    text-align: center;
+    background-color: rgba(242, 243, 237, 0.92);
+    padding: auto;
+    margin: auto;
+    font-family: 'Pacifico';
+}
+
+#home h5 {
+    text-align: center;
+    color: rgb(255, 242, 0);
+    background-color: rgba(231, 228, 229, 0.323);
+    padding: auto;
+    margin: auto;
+}
+
+#home .btn {
+    border: 2px solid green;
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: rgba(238, 238, 239, 0.863);
+}
+
+#home .btn:hover {
+    color: rgba(25, 4, 107, 0.998);
+    background-color: rgba(206, 45, 147, 0.633);
+}
+
+/*  Service Section*/
+#services {
+    margin: 5px;
+    display: flex;
+}
+
+#services .box {
+    border: 3px solid brown;
+    height: 100%;
+    width: 33.3%;
+    padding: 30px;
+    margin: 2px 5px;
+
+    border-radius: 30px;
+    background: rgba(44, 174, 33, 0.095);
+}
+
+#services .box img {
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+/* contact section */
+footer {
+    background: black;
+    color: white;
+    padding: 12px 25px;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(img/contact.jpg) no-repeat center center/cover;
+    ;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 11px;
+    font-size: 1.4rem;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box form {
+    width: 35%;
+}
+
+#contact-box label {
+    font-size: 1.5rem
+}
+
+/* Utility classes */
+.h-primary {
+    font-size: 2rem;
+    padding: 15px;
+    background-image: url(img/our-services.png);
+
+}
+
+.h-secondary {
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Clienty Section */
+#client-section {
+    height: 245px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(img/6.jpg);
+    /* padding: 2px 200px; */
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+client-item {
+    padding: 30px;
+}
+
+#client img {
+    height: 100px;
+}
+
+#thank {
+    background-color: rgb(233, 236, 5);
+    padding: 15px 5px;
+    /* margin: 4px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* transform: scale(1.5); */
+    /* text-shadow: 1.2rem; */
+    
+}
